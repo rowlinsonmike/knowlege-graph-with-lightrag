@@ -39,14 +39,15 @@ Basically there are 2 steps -
 2. Define a .env file in the root with AWS credentials. `.env_example` can be used as the template.
 3. The AWS account needs access to `amazon.nova-micro-v1:0` model.
 4. Run `uv sync` to install deps
-5. Pull embeddig model with `ollama pull nomic-embed-text`
+5. Pull embedding model with `ollama pull nomic-embed-text`
 6. Ingest your data with the following command
 
 ```bash
 uv run graph.py populate --path ./dataset/reports_last_5_yrs.csv --working-dir ./data_graph --llm-model-name amazon.nova-lite-v1:0
 ```
 
-7. Ask the knowledge graph questions
+7. The knowledge graph will be in `data_graph` dir
+8. Ask the knowledge graph questions
 
 ```bash
 uv run graph.py cli --working-dir ./data_graph --llm-model-name amazon.nova-lite-v1:0
