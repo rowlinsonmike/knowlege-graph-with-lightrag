@@ -1,0 +1,33 @@
+[project]
+name = "knowlege-graph-with-lightrag"
+version = "0.1.0"
+description = "lightrag,ollama,bedrock stack to create knowledge graphs"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aioboto3>=14.1.0",
+    "community>=1.0.0b1",
+    "fastapi>=0.115.11",
+    "graspologic>=3.4.1",
+    "imgui-bundle>=1.6.2",
+    "jwt>=1.3.1",
+    "lightrag-hku",
+    "moderngl>=5.12.0",
+    "nano-vectordb>=0.0.4.3",
+    "nest-asyncio>=1.6.0",
+    "networkx>=3.4.2",
+    "ollama>=0.4.7",
+    "openai>=1.68.2",
+    "pandas>=2.2.3",
+    "pyglm>=2.8.0",
+    "textract>=1.6.5",
+    "tk>=0.1.0",
+    "tk-tools>=0.16.0",
+    "typer>=0.15.2",
+    "uvicorn>=0.34.0",
+    "pyvis>=0.3.2",
+    "jinja2>=3.1.6",
+]
+
+[tool.uv.sources]
+lightrag-hku = { git = "https://github.com/HKUDS/LightRAG.git", rev = "v1.2.8" }
