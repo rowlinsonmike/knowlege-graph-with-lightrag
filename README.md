@@ -2,7 +2,7 @@
   <br>
   <img src="assets/bigfoot.jpg" alt="logo" width="400"/>
   <br>
-  Knowledge Graph with RAG Builder
+  Knowledge Graph with RAG System
   <br>
 </h1>
 
